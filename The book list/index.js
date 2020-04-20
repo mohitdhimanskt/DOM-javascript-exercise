@@ -8,7 +8,7 @@ function createBookList(books) {
       const listItem = document.createElement('li');
       const listTitle = document.createElement('p');
       const listImg = document.createElement('img');
-      listImg.setAttribute('src',imgCoverUrl[i]);
+      listImg.setAttribute('src', books[i].img);
     
       listOfBooks.style.display = 'flex';
       listItem.style.listStyleType ='none';
