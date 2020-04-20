@@ -1,14 +1,9 @@
 const bodyTag = document.body;
 bodyTag.style.fontFamily = 'Arial, sans-serif';
 
-const nickName = document.getElementById('nickname');
-const favFood = document.getElementById('fav-food');
-const homeTown = document.getElementById('hometown');
-
-nickName.innerText ='Mohit Dhiman';
-favFood.innerText ='Dal-Makhni';
-homeTown.innerText ='Mandi';
-
+const nickName = document.getElementById('nickname').innerText ='Mohit Dhiman';
+const favFood = document.getElementById('fav-food').innerText ='Dal-Makhni';
+const homeTown = document.getElementById('hometown').innerText ='Mandi';
 const listItem = document.getElementsByTagName('li');
 for (let i = 0; i < listItem.length; i++) {
   listItem[i].className = 'list-item';

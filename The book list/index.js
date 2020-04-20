@@ -36,24 +36,23 @@ function createBookList(books) {
     }
     return listOfBooks;
 }
-let imgCoverUrl = [];
-imgCoverUrl[0] ='https://www.dropbox.com/s/4us43o8f5ebdrwb/The%20Design%20of%20everyday%20things.jpg?raw=1';
-imgCoverUrl[1] ='https://www.dropbox.com/s/kavpsbj1ly5d05m/The%20most%20human.jpg?raw=1';
-imgCoverUrl[2] ='https://www.dropbox.com/s/gw59huxi57okmwr/The%20pragmatic%20programer.jpg?raw=1';
- 
+
 const books  = [{
 
     title: 'The Design of Everyday Things',
+    img:'https://www.dropbox.com/s/4us43o8f5ebdrwb/The%20Design%20of%20everyday%20things.jpg?raw=1',
     author: 'Don Norman',
     alreadyRead: false
   },
   {
     title: 'The Most Human Human',
+    img:'https://www.dropbox.com/s/kavpsbj1ly5d05m/The%20most%20human.jpg?raw=1',
     author: 'Brian Christian',
     alreadyRead: true
   },
   {
     title: 'The Pragmatic Programmer',
+    img:'https://www.dropbox.com/s/gw59huxi57okmwr/The%20pragmatic%20programer.jpg?raw=1',
     author: 'Andrew Hunt',
     alreadyRead: true
   }
