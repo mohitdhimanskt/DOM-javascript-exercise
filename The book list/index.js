@@ -60,3 +60,13 @@ const books  = [{
   ];
   let ulElement = createBookList(books);
   document.querySelector('#bookList').appendChild(ulElement);
+
+function hijackGoogleLogo() {
+  const logoG = document.getElementsByName('img');
+  const hyfLogo = 'https://www.hackyourfuture.dk/static/logo-dark.svg';
+  logoG[0].src = hyfLogo;
+  logoG[0].srcset = hyfLogo;
+
+}
+
+hijackGoogleLogo();
