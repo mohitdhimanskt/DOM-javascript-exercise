@@ -1,4 +1,4 @@
-var catGif = document.getElementById('img');
+var catGif = document.getElementById('catimg');
 catGif.style.left = '0px';
 
 let gifLeft = -catGif.width;
@@ -6,10 +6,11 @@ let control = -catGif.width;
 
 function catWalk() {
   gifLeft += 10;
-  catGif.style.left = `${gifLeft} px`
+  console.log(gifLeft);
+  catGif.style.left = `${gifLeft}px`
   control += 10;
   if (gifLeft > window.innerWidth) {
-    gifLeft = -catGif.width;
+    gifLeft = -catGif.width;  
     control = -catGif.width;
   }
   else if (control > ((window.innerWidth / 2) - (catGif.width / 2))) {
